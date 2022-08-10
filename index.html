@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick.css" />
+    <!-- <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick-theme.css"> -->
+    <link rel="stylesheet" href="/sass/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title class="hi">Đặt phòng homestay nhanh chóng</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation bg-white position--fixed">
+            <div class="container-fluid border--bottom ">
+                <div class="row align-middle">
+                    <div class="col-6 search-tab">
+                        <div class="logo">
+                            <img src="https://printgo.vn/uploads/file-logo/1/512x512.f42dc612c539b32e3b175b736cac024b.ai.1.png"
+                                alt="" class="logo__item">
+                        </div>
+                        <!-- location search-tab -->
+                        <div class="search__tab--box">
+                            <div class="search__tab is-relative">
+                                <div class="search__box">
+                                    <nav class="navbar navbar-light bg-white">
+                                        <form class="form-inline">
+                                            <img src="./album/icon/search.svg" alt="" class="glups-icon">
+                                            <input class="form-control mr-sm-2" type="search"
+                                                placeholder="       Tìm kiếm" aria-label="Search">
+                                        </form>
+                                    </nav>
+                                </div>
+                                <div class="date__box">
+                                    <img src="/album/icon/calendar.svg" alt="" class="calender-icon">
+                                    <span class="text__date">Ngày</span>
+                                </div>
+                                <div class="customer__box">
+                                    <img src="/album/icon/person.svg" alt="" class="person-icon">
+                                    <span class="text__cus">Số khách</span>
+
+                                </div>
+                                <button type="button" class="btn btn-dark" style="text-align: center;"><img
+                                        src="/album/icon/search_white.svg" alt="" class="search-icon"></button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 menu-location">
+                        <div class="list__items--menu">
+                            <ul class="list__items">
+                                <li class="item"><a href="">Guide</a></li>
+                                <li class="item"><a href="" class="dot-orange relative">Host</a></li>
+                                <li class="item"><a href="">Đăng kí</a></li>
+                                <li class="item"><a href="">Đăng nhập</a></li>
+                                <li class="item is dropdown-border-radius">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                            id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="https://media.istockphoto.com/vectors/vietnamese-flag-vector-id864417828?k=20&m=864417828&s=612x612&w=0&h=DPjzLACJPhH0MksTNuyl4m6GypjR1e2hatgr-XAwIKU="
+                                                alt="" class="icon-btn select language">
+                                            <p class="text-btn currency ">VND</p>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <li><button class="dropdown-item" type="button">Action</button></li>
+                                            <li><button class="dropdown-item" type="button">Another action</button></li>
+                                            <li><button class="dropdown-item" type="button">Something else here</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- make the banner -- carousel slide -->
+        <section class="header-after" id="banner">
+            <div id="carouselExampleIndicators" class="carousel slide container" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active dot-click" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2" class="dot-click"></button>
+                    <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/album/luxstay-banner2.png" class="d-block w-100 carousel-item--size" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/album/luxstay-banner1.png" class="d-block w-100 carousel-item--size" alt="...">
+                    </div>
+                </div>
+                <button hidden class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button hidden class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="container greeting">
+            <h3 class="tittle__greeting">
+                Chào mừng bạn đến với Luxstay!
+            </h3>
+            <div class="text__greeting">
+                <p>Đặt chỗ ở, homestay, cho thuê xe, trải nghiệm và nhiều hơn nữa trên Luxstay</p>
+                <p><a href="">Đăng nhập</a> hoặc <a href="">Đăng kí</a> để trải nghiệm</p>
+            </div>
+        </div>
+        <section class="slide-banner-location">
+            <div class="sites">
+                <div class="tittle__sites container">
+                    <h3 class="tittle__sites--text">Địa điểm nổi bật</h3>
+                    <p class="sites__text">Cùng Luxstay bắt đầu chuyến hành trình chinh phục thế giới của bạn</p>
+                </div>
+                <div class="slick-slide slickfa-initialization">
+                    <div class="image__slide container">
+                        <div class="image__item is-relative">
+                            <div class="image"><img class="img--size" src="/album/slick-slide1/hanoi-slick.png" alt="">
+                            </div>
+                            <div class="product__content is-absolute">
+                                <div class="product__tittle">Hà Nội</div>
+                                <span class="product__info d-block">
+                                    <b>15 593</b>
+                                    <p>Chỗ ở</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="image__item is-relative">
+                            <div class="image"><img class="img--size" src="/album/slick-slide1/saigon-slick.png" alt="">
+                            </div>
+                            <div class="product__content is-absolute">
+                                <div class="product__tittle">TP.Hồ Chí Minh</div>
+                                <span class="product__info d-block">
+                                    <b>8628</b>
+                                    <p>Chỗ ở</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="image__item is-relative">
+                            <div class="image"><img class="img--size" src="/album/slick-slide1/danang-slick.png" alt="">
+                            </div>
+                            <div class="product__content is-absolute">
+                                <div class="product__tittle">Đà Nẵng</div>
+                                <span class="product__info d-block">
+                                    <b>2735</b>
+                                    <p>Chỗ ở</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="image__item is-relative">
+                            <div class="image"><img class="img--size" src="/album/slick-slide1/daltat-slick.png" alt="">
+                            </div>
+                            <div class="product__content is-absolute">
+                                <div class="product__tittle">Đà Lạt</div>
+                                <span class="product__info d-block">
+                                    <b>6932</b>
+                                    <p>Chỗ ở</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="image__item is-relative">
+                            <div class="image"><img class="img--size" src="/album/slick-slide1/vungtau-slick.png"
+                                    alt="">
+                            </div>
+                            <div class="product__content is-absolute">
+                                <div class="product__tittle">Vũng Tàu</div>
+                                <span class="product__info d-block">
+                                    <b>3299</b>
+                                    <p>Chỗ ở</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="image__item is-relative">
+                            <div class="image"><img class="img--size" src="/album/slick-slide1/nhatrang-slick.png"
+                                    alt="">
+                            </div>
+                            <div class="product__content is-absolute">
+                                <div class="product__tittle">Nha Trang</div>
+                                <span class="product__info d-block">
+                                    <b>2031</b>
+                                    <p>Chỗ ở</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="image__item is-relative">
+                            <div class="image"><img class="img--size" src="/album/slick-slide1/quangninh-slick.png"
+                                    alt="">
+                            </div>
+                            <div class="product__content is-absolute">
+                                <div class="product__tittle">Quảng Ninh</div>
+                                <span class="product__info d-block">
+                                    <b>2104</b>
+                                    <p>Chỗ ở</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="image__item is-relative">
+                            <div class="image"><img class="img--size" src="/album/slick-slide1/hoian-slick.png" alt="">
+                            </div>
+                            <div class="product__content is-absolute">
+                                <div class="product__tittle">Hội An</div>
+                                <span class="product__info d-block">
+                                    <b>695</b>
+                                    <p>Chỗ ở</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/slick-carousel/slick/slick.js"></script>
+    <script rel="stylesheet" src="main.js"></script>
+</body>
+
+</html>

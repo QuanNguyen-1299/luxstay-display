@@ -1,0 +1,234 @@
+@import "variable";
+
+.navigation {
+    border-bottom: 1px solid $color-line;
+    padding-bottom: 5px;
+
+    .container-fluid {
+        margin-top: 5px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+// style for logo
+.search-tab {
+    display: flex;
+
+
+    .logo {
+        @include item-center();
+        width: 70px;
+        height: 70px;
+        border-radius: 50% 50%;
+        background-color: #F5F5F5;
+        padding: 10px;
+
+        .logo__item {
+            width: 55px;
+            height: 55px;
+            border-radius: 50% 50%;
+        }
+    }
+}
+
+
+//style location search tab box
+
+.search__tab--box {
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .search__tab {
+        position: relative;
+        top: 14px;
+        display: flex;
+        border: 1px solid $color-line;
+        border-radius: 5px;
+        height: 47px;
+        box-shadow: 1px 1px 4px $color-line;
+
+        .search__box {
+            .form-inline {
+                display: flex;
+                position: absolute;
+                top: 3px;
+                left: 4px;
+                width: fit-content;
+
+                .glups-icon {
+                    position: absolute;
+                    z-index: 99;
+                    top: 6px;
+                    left: -5px;
+                }
+
+                .form-control {
+                    border: none;
+                    width: 300px;
+                }
+            }
+        }
+
+        .date__box {
+            display: flex;
+            height: fit-content;
+            position: absolute;
+            top: 11px;
+            right: 210px;
+
+            .text__date {
+                margin-left: $margin-text ;
+                @include text-font()
+            }
+        }
+
+        //make the line = before and after
+        .date__box::before {
+            content: "";
+            position: absolute;
+            top: -8px;
+            right: 78px;
+            background-color: $color-line;
+            width: 1px;
+            height: 40px;
+        }
+
+        .customer__box {
+            display: flex;
+            height: fit-content;
+            position: absolute;
+            top: 11px;
+            right: 90px;
+
+            .text__cus {
+                margin-left: $margin-text ;
+                @include text-font()
+            }
+        }
+
+        //make the line = before 
+        .customer__box::before {
+            content: "";
+            position: absolute;
+            top: -8px;
+            right: 100px;
+            background-color: $color-line;
+            width: 1px;
+            height: 40px;
+        }
+
+        .btn {
+            background-color: #555555;
+            width: 60px;
+            height: 40px;
+            position: absolute;
+            right: 8px;
+            top: 2px;
+        }
+    }
+}
+
+//----------------->
+// style menu location
+.menu-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .list__items--menu {
+        height: fit-content;
+
+        .list__items {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 0px;
+
+            .item {
+                padding-bottom: 4px;
+                margin-left: 25px;
+
+                a {
+                    text-decoration: none;
+                    @include text-font()
+                }
+
+                //style the dot orange for host text
+                .dot-orange {
+                    position: relative;
+                }
+
+                .dot-orange::before {
+                    content: "";
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    background: orange;
+                    border-radius: 50%;
+                    right: -7px;
+                    top: 1px;
+                }
+            }
+        }
+    }
+}
+
+//style dropdown menu #F6F6F6
+.dropdown-border-radius {
+    padding-bottom: 0px !important;
+
+    .dropdown {
+        .btn-secondary {
+            display: flex;
+            background-color: #F6F6F6;
+            border-radius: 1.875em;
+            height: 33px;
+            line-height: 1.1;
+            border: none;
+
+            .icon-btn {
+                width: 25px;
+                height: 25px;
+                border-radius: 50% 50%;
+                margin-left: -9px;
+                margin-top: -3px
+            }
+
+            .text-btn {
+                @include text-font();
+                margin: 0px 4px 0px 6px
+            }
+        }
+
+        .dropdown-toggle::after {
+            color: #222 !important;
+            margin-top: 7px;
+        }
+    }
+}
+
+//style the banner -- header after
+#banner {
+    .carousel {
+        .carousel-indicators {
+            margin: 0px;
+            justify-content: flex-end;
+            right: 60px;
+            bottom: 15px;
+        }
+
+        .dot-click {
+            width: 8px;
+            height: 8px;
+            border-radius: 50% 50%;
+            background-color:#9C9C9C;
+            margin-left: 8px;
+        }
+    }
+    .carousel-inner {  margin-top: 40px;
+        border-radius: 20px;
+    }  
+}
