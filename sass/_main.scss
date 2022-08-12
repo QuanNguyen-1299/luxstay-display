@@ -1,36 +1,132 @@
+//style for greeting
+.greeting {
+    margin-top: 42px;
+
+    .tittle__greeting {
+
+        margin-bottom: 12px;
+    }
+
+    .text__greeting {
+        p {
+            margin-top: 5px;
+            margin-bottom: 5px;
+
+            a {
+                color: #222;
+            }
+        }
+    }
+}
+
+//style for sites
+.slide-banner-location{
+    margin-bottom: 42px ;
+}
+.sites {
+    .tittle__sites--text {
+        font-family: $main__font-family;
+    }
+
+    .tittle__sites {
+        margin-top: 42px;
+        font-family: $main__font-family;
+    }
+}
+
+// style of slick-carousel slider
+.slick-initialized {
+    .slick-prev {
+        left: -32px;
+    }
+
+    .slick-next {
+        right: -29px;
+    }
+
+    .slick-prev:before {
+        content: "<";
+        color: black;
+        font-size: 1.4rem;
+    }
+
+    .slick-next:before {
+        content: ">";
+        color: black;
+        font-size: 1.4rem;
+    }
+
+    .slick-arrow {
+        @include item-center;
+        background-color: #fff;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 52%;
+        transform: translateY(-50%);
+        z-index: 1;
+        border: none;
+        border-radius: 50% 50%;
+        box-shadow: 0 0 7px -4px #000;
+    }
+
+    .slick-disabled {
+        opacity: .5;
+    }
+
+    .slick-list {
+        .slick-track {
+            margin-left: -8px;
+
+            .slick-slide {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+
+                .img--size {
+                    width: 100%;
+                    height: 300px;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+
+ //style tittle and info of product--relative & absolute
+ .image__item {
+    position: relative;
+
+    .product__content {
+        position: absolute;
+        bottom: 5px;
+        left: 30px;
+
+        .product__tittle {
+            color: $text__slick--color;
+            font-size: 27px;
+            font-weight: 700;
+            font-family: $main__font-family;
+        }
+
+        .product__info {
+            width: fit-content;
+
+            b {
+                color: $text__slick--color;
+                font-family: $main__font-family;
+                float: left;
+                margin-right: 5px;
+            }
+
+            p {
+                color: $text__slick--color;
+                font-family: $main__font-family;
+                float: right;
+            }
+        }
+    }
+}
 
 
- //style for greeting
- .greeting {
-     margin-top: 42px;
 
-     .tittle__greeting {
 
-         margin-bottom: 12px;
-     }
-
-     .text__greeting {
-         p {
-             margin-top: 5px;
-             margin-bottom: 5px;
-
-             a {
-                 color: #222;
-             }
-         }
-     }
- }
-
- //style địa điểm
- .sites {
-     .tittle__sites--text {
-         font-family: $main__font-family;
-     }
-
-     .tittle__sites {
-         margin-top: 42px;
-         font-family: $main__font-family;
-     }
- }
-
- // style of slick-carousel slider

@@ -1,13 +1,20 @@
-
-
 .navigation {
-    border-bottom: 1px solid $color-line;
+    border-bottom: 1px solid #EEEEEE;
     padding-bottom: 5px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
 
     .container-fluid {
         margin-top: 5px;
         padding-left: 40px;
         padding-right: 40px;
+
+        .mg-left-right {
+            margin-left: 70px;
+            margin-right: 70px;
+        }
     }
 }
 
@@ -176,7 +183,7 @@
     }
 }
 
-//style dropdown menu #F6F6F6
+//style dropdown menu 
 .dropdown-border-radius {
     padding-bottom: 0px !important;
 
@@ -212,6 +219,8 @@
 
 //style the banner -- header after
 #banner {
+    margin-top: calc(81px + 42px);
+
     .carousel {
         .carousel-indicators {
             margin: 0px;
@@ -224,11 +233,13 @@
             width: 8px;
             height: 8px;
             border-radius: 50% 50%;
-            background-color:#9C9C9C;
+            background-color: #9C9C9C;
             margin-left: 8px;
         }
     }
-    .carousel-inner {  margin-top: 40px;
+
+    .carousel-inner {
+        margin-top: 40px;
         border-radius: 20px;
-    }  
+    }
 }

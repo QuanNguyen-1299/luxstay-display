@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <!-- <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick.css" /> -->
-    <!-- <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick-theme.css"> -->
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="/sass/styles.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <title class="hi">Đặt phòng homestay nhanh chóng</title>
@@ -18,7 +15,7 @@
     <header>
         <nav class="navigation bg-white position--fixed">
             <div class="container-fluid border--bottom ">
-                <div class="row align-middle">
+                <div class="row align-middle mg-left-right">
                     <div class="col-6 search-tab">
                         <div class="logo">
                             <img src="https://printgo.vn/uploads/file-logo/1/512x512.f42dc612c539b32e3b175b736cac024b.ai.1.png"
@@ -81,7 +78,7 @@
             </div>
         </nav>
         <!-- make the banner -- carousel slide -->
-        <section class="header-after" id="banner">
+        <div class="header-after" id="banner">
             <div id="carouselExampleIndicators" class="carousel slide container" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -109,7 +106,7 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </section>
+        </div>
     </header>
     <main>
         <div class="container greeting">
@@ -121,21 +118,133 @@
                 <p><a href="">Đăng nhập</a> hoặc <a href="">Đăng kí</a> để trải nghiệm</p>
             </div>
         </div>
-        <section class="slide-banner-location">
-            <div class="sites">
-                <div class="tittle__sites container">
-                    <h3 class="tittle__sites--text">Địa điểm nổi bật</h3>
-                    <p class="sites__text">Cùng Luxstay bắt đầu chuyến hành trình chinh phục thế giới của bạn</p>
+        <div class="slide-banner-location">
+            <div class="container">
+                <div class="sites">
+                    <div class="tittle__sites">
+                        <h3 class="tittle__sites--text">Địa điểm nổi bật</h3>
+                        <p class="sites__text">Cùng Luxstay bắt đầu chuyến hành trình chinh phục thế giới của bạn</p>
+                    </div>
+                </div>
+
+                <div class="slide-carousel">
+                    <div class="image__item is-relative">
+                        <div class="image"><img class="img--size" src="/album/slick-slide1/hanoi-slick.png" alt="">
+                        </div>
+                        <div class="product__content is-absolute">
+                            <div class="product__tittle">Hà Nội</div>
+                            <span class="product__info d-block">
+                                <b>15 593</b>
+                                <p>Chỗ ở</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="image__item is-relative">
+                        <div class="image"><img class="img--size" src="/album/slick-slide1/saigon-slick.png" alt="">
+                        </div>
+                        <div class="product__content is-absolute">
+                            <div class="product__tittle">TP.Hồ Chí Minh</div>
+                            <span class="product__info d-block">
+                                <b>8628</b>
+                                <p>Chỗ ở</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="image__item is-relative">
+                        <div class="image"><img class="img--size" src="/album/slick-slide1/danang-slick.png" alt="">
+                        </div>
+                        <div class="product__content is-absolute">
+                            <div class="product__tittle">Đà Nẵng</div>
+                            <span class="product__info d-block">
+                                <b>2735</b>
+                                <p>Chỗ ở</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="image__item is-relative">
+                        <div class="image"><img class="img--size" src="/album/slick-slide1/daltat-slick.png" alt="">
+                        </div>
+                        <div class="product__content is-absolute">
+                            <div class="product__tittle">Đà Lạt</div>
+                            <span class="product__info d-block">
+                                <b>6932</b>
+                                <p>Chỗ ở</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="image__item is-relative">
+                        <div class="image"><img class="img--size" src="/album/slick-slide1/vungtau-slick.png" alt="">
+                        </div>
+                        <div class="product__content is-absolute">
+                            <div class="product__tittle">Vũng Tàu</div>
+                            <span class="product__info d-block">
+                                <b>3299</b>
+                                <p>Chỗ ở</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="image__item is-relative">
+                        <div class="image"><img class="img--size" src="/album/slick-slide1/nhatrang-slick.png" alt="">
+                        </div>
+                        <div class="product__content is-absolute">
+                            <div class="product__tittle">Nha Trang</div>
+                            <span class="product__info d-block">
+                                <b>2031</b>
+                                <p>Chỗ ở</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="image__item is-relative">
+                        <div class="image"><img class="img--size" src="/album/slick-slide1/quangninh-slick.png" alt="">
+                        </div>
+                        <div class="product__content is-absolute">
+                            <div class="product__tittle">Quảng Ninh</div>
+                            <span class="product__info d-block">
+                                <b>2104</b>
+                                <p>Chỗ ở</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="image__item is-relative">
+                        <div class="image"><img class="img--size" src="/album/slick-slide1/hoian-slick.png" alt="">
+                        </div>
+                        <div class="product__content is-absolute">
+                            <div class="product__tittle">Hội An</div>
+                            <span class="product__info d-block">
+                                <b>695</b>
+                                <p>Chỗ ở</p>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="endow-location">
+            <div class="container">
+                <div class="tittle__endow-location w-100">
+                    <div class="tittle-info--endow">
+                        <h3 class="tittle__endow">Ưu đãi độc quyền</h3>
+                        <p class="text__endow">Chỉ có tại Luxstay, hấp dẫn và hữu hạn, book ngay!</p>
+                    </div>
+                    <div class="read-more">
+                        <a href="">Xem thêm</a>
+                    </div>
+                </div>
+
+                <div class="banner__endow-location">
+                    <div><img class="img-size" src="album/slick-slide2/event_banner1.jpg" alt=""></div>
+                    <div><img class="img-size" src="album/slick-slide2/event_banner2.jpg" alt=""></div>
+                    <div><img class="img-size" src="album/slick-slide2/event_banner3.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        
+
     </main>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="./node_modules/jquery/dist/jquery.js"></script>
-    <script src="./node_modules/slick-carousel/slick/slick.js"></script> -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>
     <script rel="stylesheet" src="main.js"></script>
 </body>
 

@@ -1,0 +1,37 @@
+.tittle__endow-location {
+    display: flex;
+    justify-content: space-between;
+
+    .tittle-info--endow {
+
+        .tittle__endow {
+            font-family: $main__font-family;
+        }
+
+        .text__endow {
+            @include text-font;
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+
+    .read-more {
+        display: flex;
+        align-self: flex-end;
+        margin-bottom: 16px;
+
+        a {
+            font-family: $main__font-family;
+            text-decoration: none;
+            color: #F65E39;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+}
+
+.img-size{
+    width: 422px;
+    height: 183px;
+    border-radius: 10px;
+}
