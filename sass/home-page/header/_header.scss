@@ -1,0 +1,348 @@
+.navigation {
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 5px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+
+    .container-fluid {
+        margin-top: 5px;
+        padding-left: 40px;
+        padding-right: 40px;
+
+        .mg-left-right {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+// style for logo
+.search-tab {
+    display: flex;
+
+
+    .logo {
+        @include item-center();
+        width: 70px;
+        height: 70px;
+        border-radius: 50% 50%;
+        background-color: #F5F5F5;
+        padding: 10px;
+
+        .logo__item {
+            width: 55px;
+            height: 55px;
+            border-radius: 50% 50%;
+        }
+    }
+}
+
+
+//style location search tab box
+
+.search__tab--box {
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .search__tab {
+        position: relative;
+        top: 14px;
+        display: flex;
+        border: 1px solid $color-line;
+        border-radius: 5px;
+        height: 47px;
+        box-shadow: 1px 1px 4px $color-line;
+
+        .search__box {
+            padding: 0px;
+
+            .navbar {
+                width: 100%;
+                height: 100%;
+                padding: 0px;
+
+                .nav__icon {
+                    position: absolute;
+                    z-index: 99;
+                    top: 9px;
+                    left: 8px;
+                }
+
+                .form-inline {
+                    width: 100%;
+
+                    .form-control {
+                        border: none;
+                        padding: 8px 12px 8px 40px;
+                        font-family: $main__font-family;
+                        font-weight: 500;
+
+                    }
+
+                }
+
+
+            }
+
+        }
+
+        .date__box {
+            @include item-center;
+            height: fit-content;
+
+            .date__box--inner {
+                height: fit-content;
+
+                .text__date {
+                    margin-left: $margin-text ;
+                    @include text-font()
+                }
+
+                .calender-icon {
+                    margin-bottom: 3px;
+                }
+            }
+
+
+        }
+
+        //make the line = before and after
+        .date__box::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            right: 340px;
+            background-color: $color-line;
+            width: 1px;
+            height: 40px;
+        }
+
+        .customer__box {
+            height: fit-content;
+            @include item-center;
+
+            .customer__box--inner {
+                height: fit-content;
+
+                .text__cus {
+                    margin-left: $margin-text ;
+                    @include text-font()
+                }
+
+                .person-icon {
+                    margin-bottom: 3px
+                }
+            }
+
+        }
+
+        // make the line = before 
+        .customer__box::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            right: 228px;
+            background-color: $color-line;
+            width: 1px;
+            height: 40px;
+        }
+
+        .button__box {
+            @include item-center;
+            padding-left: 50px;
+
+            .btn__box--inner {
+                width: fit-content;
+                height: 100%;
+
+                .btn {
+                    background-color: #555555;
+                    width: 60px;
+                    height: 40px;
+                    margin-top: 2px;
+
+                }
+            }
+        }
+
+    }
+}
+
+//----------------->
+// style menu location
+.menu-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .list__items--menu {
+        height: fit-content;
+
+        .list__items {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 0px;
+
+            .item {
+                padding-bottom: 4px;
+                margin-left: 25px;
+
+                a {
+                    text-decoration: none;
+                    @include text-font()
+                }
+
+                //style the dot orange for host text
+                .dot-orange {
+                    position: relative;
+                }
+
+                .dot-orange::before {
+                    content: "";
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    background: orange;
+                    border-radius: 50%;
+                    right: -7px;
+                    top: 1px;
+                }
+            }
+        }
+    }
+}
+
+//style dropdown menu 
+.dropdown-border-radius {
+    padding-bottom: 0px !important;
+
+    .dropdown {
+        .btn-secondary {
+            display: flex;
+            background-color: #F6F6F6;
+            border-radius: 1.875em;
+            height: 33px;
+            line-height: 1.1;
+            border: none;
+
+            .icon-btn {
+                width: 25px;
+                height: 25px;
+                border-radius: 50% 50%;
+                margin-left: -9px;
+                margin-top: -3px
+            }
+
+            .text-btn {
+                @include text-font();
+                margin: 0px 4px 0px 6px
+            }
+        }
+
+        .dropdown-toggle::after {
+            color: #222 !important;
+            margin-top: 7px;
+        }
+
+        .dropdown-menu {
+            width: 470px;
+            height: max-content;
+            transform: translate3d(-0.888889px, 45px, 0px) !important;
+           
+            
+
+            .menu-content-item {
+                width: 100%;
+                margin: 0px;
+                position: relative;
+
+
+                .col-menu--item {
+                    line-height: 2;
+
+                    .menu__items {
+                        display: flex;
+                        text-align: center;
+
+                        .icon--size {
+                            width: 24px;
+                            height: 24px;
+                            margin-top: 2px;
+                        }
+
+                        .content__item {
+                            padding: 0px 12px;
+                            font-weight: 400;
+                            font-size: 16px;
+
+                        }
+
+                        .tittle__item {
+                            font-weight: bold;
+                        }
+
+                        .fa-check {
+                            padding-top: 8px;
+                        }
+                    }
+                }
+            }
+
+            .menu-content-item::before {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 146px;
+                background-color: $color-line;
+                left: 234px;
+
+            }
+
+            .menu-content-item::after {
+                content: "";
+                position: absolute;
+                top: -17px;
+                right: 2rem;
+                transform: rotate(45deg);
+                height: 1rem;
+                width: 1rem;
+                border-top: 1px solid $color-line;
+                border-left: 1px solid $color-line;
+                background-color: #FFF;
+
+            }
+        }
+    }
+}
+
+//style the banner -- header after
+#banner {
+    margin-top: calc(81px + 42px);
+
+    .carousel {
+        .carousel-indicators {
+            margin: 0px;
+            justify-content: flex-end;
+            right: 60px;
+            bottom: 15px;
+        }
+
+        .dot-click {
+            width: 8px;
+            height: 8px;
+            border-radius: 50% 50%;
+            background-color: #9C9C9C;
+            margin-left: 8px;
+        }
+    }
+
+    .carousel-inner {
+        margin-top: 40px;
+        border-radius: 20px;
+    }
+}
