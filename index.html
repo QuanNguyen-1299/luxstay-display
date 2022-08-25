@@ -10,173 +10,155 @@
     <link rel="stylesheet" href="/sass/styles.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="node_modules/jquery-ui/themes/base/all.css">
 
     <title class="hi">Đặt phòng homestay nhanh chóng</title>
 </head>
 
 <body>
     <header>
-        <nav class="navigation bg-white position--fixed">
-            <div class="container-fluid border--bottom ">
-                <div class="row align-middle mg-left-right">
-                    <div class="col-lg-6 col-10 search-tab">
-                        <div class="logo">
-                            <img src="https://printgo.vn/uploads/file-logo/1/512x512.f42dc612c539b32e3b175b736cac024b.ai.1.png"
-                                alt="" class="logo__item">
-                        </div>
-                        <!-- location search-tab -->
-                        <div class="search__tab--box">
-                            <div class="search__tab is-relative row">
-                                <div class="search__box col-lg-6">
-                                    <nav class="navbar navbar-light bg-white">
-                                        <span class="nav__icon">
-                                            <img src="./album/icon/search.svg" alt="" class="glups-icon">
-                                        </span>
-                                        <form class="form-inline">
-                                            <input class="form-control" type="search" placeholder="Tìm kiếm"
-                                                aria-label="Search">
-                                        </form>
-                                    </nav>
+        <nav class="navbar">
+            <div class="navbar-body">
+                <div class="container">
+                    <div class="navbar-wrap">
+                        <div class="header-search-logo">
+                            <a href="index.html" class="logo"><img src="album/home/luxstray-logo.png" alt="" class="img"
+                                    width="200px" /></a>
+                            <div class="search">
+                                <div class="position-relative box-search-input">
+                                    <input type="text" class="search__text" placeholder="Tìm kiếm">
+                                    <i class="fa-solid fa-magnifying-glass icon-search"></i>
                                 </div>
-                                <div class="date__box col-lg-2 h-100 d-none d-sm-flex">
-                                    <div class="date__box--inner">
-                                        <img src="/album/icon/calendar.svg" alt="" class="calender-icon">
-                                        <span class="text__date">Ngày</span>
+                                <span class="search__date">
+                                    <input hidden type="text" id="datepicker" />
+                                </span>
+                                <span class="search__guest__number">
+                                    Số khách
+                                </span>
+                                <button class="btn-search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <div class="search__guest--box none">
+                                    <div class="guest-box__item">
+                                        <div class="guest__item">
+                                            <p>Người lớn</p>
+                                        </div>
+                                        <div class="number__itemt">
+                                            <p class="number__tittle">0</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="customer__box col-lg-2 h-100 d-none d-sm-flex">
-                                    <div class="customer__box--inner">
-                                        <img src="/album/icon/person.svg" alt="" class="person-icon">
-                                        <span class="text__cus">Số khách</span>
+                                    <div class="guest-box__item">
+                                        <div class="guest__item">
+                                            <p>Trẻ em</p>
+                                            <a>Tuổi từ 2-12</a>
+                                        </div>
+                                        <div class="number__itemt">
+                                            <p class="number__tittle">0</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="button__box h-100 col-lg-2 d-none d-sm-flex">
-                                    <div class="btn__box--inner">
-                                        <button type="button" class="btn btn-dark " style="text-align: center;"><img
-                                                src="/album/icon/search_white.svg" alt="" class="search-icon"></button>
+                                    <div class="guest-box__item">
+                                        <div class="guest__item">
+                                            <p>Trẻ sơ sinh</p>
+                                            <a>Dưới 2 tuổi</a>
+                                        </div>
+                                        <div class="number__itemt">
+                                            <p class="number__tittle">0</p>
+                                        </div>
+                                    </div>
+                                    <div class="guest-box__item">
+                                        <div class="guest__item">
+                                            <p class="delete">Xóa</p>
+                                        </div>
+                                        <div class="apply__item">
+                                            <p class="apply">Áp dụng</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-6 menu-location">
-                        <div class="list__items--menu">
-                            <ul class="list__items">
-                                <li class="item"><a href="">Guide</a></li>
-                                <li class="item"><a href="" class="dot-orange relative">Host</a></li>
-                                <li class="item"><a href="">Đăng kí</a></li>
-                                <li class="item"><a href="">Đăng nhập</a></li>
-                                <li class="item is dropdown-border-radius">
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button"
-                                            id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <img src="https://media.istockphoto.com/vectors/vietnamese-flag-vector-id864417828?k=20&m=864417828&s=612x612&w=0&h=DPjzLACJPhH0MksTNuyl4m6GypjR1e2hatgr-XAwIKU="
-                                                alt="" class="icon-btn select language">
-                                            <p class="text-btn currency ">VND</p>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                            <div class="row menu-content-item">
-                                                <div class="col-6 col-menu--item">
-                                                    <p class="menu__items">
-                                                        <img class="icon--size"
-                                                            src="https://www.luxstay.com/icons/vi.svg" alt="">
-                                                        <a href="" class="content__item">Tiếng Việt</a>
-                                                        <i class="fa-solid fa-check"></i>
-                                                    </p>
-                                                    <p class="menu__items">
-                                                        <img class="icon--size"
-                                                            src="https://www.luxstay.com/icons/en.svg" alt="">
-                                                        <a href="" class="content__item">English</a>
-                                                    </p>
-                                                    <p class="menu__items">
-                                                        <img class="icon--size"
-                                                            src="https://www.luxstay.com/icons/ko.svg" alt="">
-                                                        <a href="" class="content__item">Korean</a>
-                                                    </p>
-                                                </div>
-                                                <div class="col-6 col-menu--item">
-                                                    <p class="menu__items">
-                                                        <a class="tittle__item" href="">VND</a>
-                                                        <a href="" class="content__item">Việt Nam Đồng</a>
-                                                        <i class="fa-solid fa-check"></i>
-                                                    </p>
-                                                    <p class="menu__items">
-                                                        <a class="tittle__item" href="">USD</a>
-                                                        <a href="" class="content__item">United States Dollar</a>
-                                                    </p>
-                                                </div>
+                        <div class="d-flex">
+                            <button class="search-moblie">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                            <button class="toggle">
+                                <span>Toggle</span>
+                            </button>
+                        </div>
+
+                        <div class="navbar-nav">
+                            <div class="navbar-content">
+                                <button class="toggle">
+                                    <span>Toggle</span>
+                                </button>
+                                <div class="search">
+                                    <form action="#" class="form form-search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Tìm kiếm nhanh..." />
+                                            <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <ul class="menu">
+                                    <li class="menu-item menu-type1">
+                                        <a href="#" class="menu-link">Guilde</a>
+                                    </li>
+                                    <li class="menu-item menu-type2">
+                                        <a href="#" class="menu-link">Host</a>
+                                    </li>
+                                    <li class="menu-item menu-type2">
+                                        <a href="#" class="menu-link">Đăng ký</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#" class="menu-link">Đăng nhập</a>
+                                    </li>
+                                </ul>
+                                <div class="shoping-box">
+                                    <a href="#" class="shoping-cart">
+                                        VND
+                                    </a>
+                                    <div class="menu-cart">
+                                        <div class="row menu__content--cart content__item--mb">
+                                            <div class="col-md-6 col-sm-12 menu__content__item">
+                                                <p class="menu__items">
+                                                    <img class="icon--size" src="https://www.luxstay.com/icons/vi.svg"
+                                                        alt="">
+                                                    <a href="" class="content__item">Tiếng Việt</a>
+                                                    <i class="fa-solid fa-check"></i>
+                                                </p>
+                                                <p class="menu__items">
+                                                    <img class="icon--size" src="https://www.luxstay.com/icons/en.svg"
+                                                        alt="">
+                                                    <a href="" class="content__item">English</a>
+                                                </p>
+                                                <p class="menu__items">
+                                                    <img class="icon--size" src="https://www.luxstay.com/icons/ko.svg"
+                                                        alt="">
+                                                    <a href="" class="content__item">Korean</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 menu__content__item">
+                                                <p class="menu__items">
+                                                    <a class="tittle__item" href="">VND</a>
+                                                    <a href="" class="content__item">Việt Nam Đồng</a>
+                                                    <i class="fa-solid fa-check"></i>
+                                                </p>
+                                                <p class="menu__items">
+                                                    <a class="tittle__item" href="">USD</a>
+                                                    <a href="" class="content__item">United States Dollar</a>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- menu hamberger for mobile -->
-                    <div class="icon-mobile-menu col-2 d-flex d-sm-none" >
-                        <i onclick="openNav ()" class="fa-solid fa-bars" ></i>
-                    </div>
-                    
-                    <div class="nav-overlay d-none"></div>
-                    <div class="d-flex text-white bg-white d-sm-none mobile-menu" id="menu-mb" >
-                        <div class="nav__mobile--menu">
-                            <div class="times-icone" >
-                                <i onclick="closeNav ()" class="fa-solid fa-xmark fa-2x" style="color:gray"></i>
+                                </div>
                             </div>
-                            <ul class="list__items--mb">
-                                <li class="item--mb"><a href="">Guide</a></li>
-                                <li class="item--mb"><a href="" class="dot-orange relative">Host</a></li>
-                                <li class="item--mb"><a href="">Đăng kí</a></li>
-                                <li class="item--mb"><a href="">Đăng nhập</a></li>
-                                <li class="item--mb is dropdown-border-radius">
-                                    <div class="dropdown dropdown--mb">
-                                        <button class="btn btn--mb btn-secondary dropdown-toggle" type="button"
-                                            id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <img src="https://media.istockphoto.com/vectors/vietnamese-flag-vector-id864417828?k=20&m=864417828&s=612x612&w=0&h=DPjzLACJPhH0MksTNuyl4m6GypjR1e2hatgr-XAwIKU="
-                                                alt="" class="icon-btn select language">
-                                            <p class="text-btn currency--mb ">VND</p>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu--mb " aria-labelledby="dropdownMenu2">
-                                            <div class="row menu-content-item content__item--mb">
-                                                <div class="col-6 col-menu--item">
-                                                    <p class="menu__items">
-                                                        <img class="icon--size"
-                                                            src="https://www.luxstay.com/icons/vi.svg" alt="">
-                                                        <a href="" class="content__item">Tiếng Việt</a>
-                                                        <i class="fa-solid fa-check"></i>
-                                                    </p>
-                                                    <p class="menu__items">
-                                                        <img class="icon--size"
-                                                            src="https://www.luxstay.com/icons/en.svg" alt="">
-                                                        <a href="" class="content__item">English</a>
-                                                    </p>
-                                                    <p class="menu__items">
-                                                        <img class="icon--size"
-                                                            src="https://www.luxstay.com/icons/ko.svg" alt="">
-                                                        <a href="" class="content__item">Korean</a>
-                                                    </p>
-                                                </div>
-                                                <div class="col-6 col-menu--item">
-                                                    <p class="menu__items">
-                                                        <a class="tittle__item" href="">VND</a>
-                                                        <a href="" class="content__item">Việt Nam Đồng</a>
-                                                        <i class="fa-solid fa-check"></i>
-                                                    </p>
-                                                    <p class="menu__items">
-                                                        <a class="tittle__item" href="">USD</a>
-                                                        <a href="" class="content__item">United States Dollar</a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
                         </div>
+                        <div class="navbar-overlay"></div>
                     </div>
                 </div>
             </div>
         </nav>
+       
+ 
         <!-- make the banner -- carousel slide -->
         <div class="header-after" id="banner">
             <div id="carouselExampleIndicators" class="carousel slide container container-md" data-bs-ride="carousel">
@@ -785,6 +767,7 @@
 
     </footer>
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/jquery-ui/dist/jquery-ui.js"></script>
     <script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>
     <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>

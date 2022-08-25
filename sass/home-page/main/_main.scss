@@ -5,32 +5,41 @@
     .tittle__greeting {
 
         margin-bottom: 12px;
+
     }
 
     .text__greeting {
         p {
             margin-top: 5px;
             margin-bottom: 5px;
+            font-size: 15px;
 
             a {
                 color: #222;
+                font-size: 15px;
             }
         }
     }
 }
 
 //style for sites
-.slide-banner-location{
-    margin-bottom: 42px ;
+.slide-banner-location {
+    margin-bottom: 42px;
 }
+
 .sites {
-    .tittle__sites--text {
-        font-family: $main__font-family;
-    }
 
     .tittle__sites {
         margin-top: 42px;
         font-family: $main__font-family;
+
+        .tittle__sites--text {
+            font-family: $main__font-family;
+        }
+
+        .sites__text {
+            font-size: 15px;
+        }
     }
 }
 
@@ -80,9 +89,10 @@
     }
 }
 
- //style tittle and info of product--relative & absolute
- .image__item {
+//style tittle and info of product--relative & absolute
+.image__item {
     position: relative;
+    padding-left: 0.8rem !important;
 
     .product__content {
         position: absolute;
@@ -104,17 +114,15 @@
                 font-family: $main__font-family;
                 float: left;
                 margin-right: 5px;
+                font-size: 14px;
             }
 
             p {
                 color: $text__slick--color;
                 font-family: $main__font-family;
                 float: right;
+                font-size: 14px;
             }
         }
     }
 }
-
-
-
-

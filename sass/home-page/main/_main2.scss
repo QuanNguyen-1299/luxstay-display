@@ -60,9 +60,11 @@
     }
 
     .suggestions__img {
+        padding-left: 0.7rem !important;
         .image-size {
             width: 100%;
             border-radius: 4px;
+            
         }
     }
 }
@@ -93,9 +95,18 @@
 
 //<-------------->
 //discover slider style
+.discover__location--content{
+    .tittle-info--discover{
+        .text__discover{
+            font-size: 15px;
+        }
+    }
+}
 .discover-slider {
+    
     .discover-items {
         position: relative;
+        padding-left: 0.8rem !important;
 
         .img-items {
             position: relative;
@@ -173,6 +184,9 @@
 .user-manual-location{
     margin-top: 42px;
     margin-bottom: 42px;
+    .expert__content{
+        font-size: 15px;
+    }
 }
 .user-manual-slider{
     .user-manual__items{
