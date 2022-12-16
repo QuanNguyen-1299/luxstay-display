@@ -201,9 +201,10 @@ body {
 
             &::before {
                 content: '';
-                background-image: url('https://www.luxstay.com/icons/vi.svg');
+                background-image: url('https://illustoon.com/photo/912.png');
                 background-repeat: no-repeat;
                 background-size: cover;
+                border-radius: 50%;
                 display: block;
                 width: 25px;
                 height: 25px;
@@ -290,6 +291,7 @@ body {
 
                         .icon--size {
                             width: 24px;
+                            height: 24px;
                         }
 
                         .content__item {

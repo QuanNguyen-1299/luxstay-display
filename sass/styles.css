@@ -81,13 +81,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .search__tab--box .search__tab .date__box .date__box--inner {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .search__tab--box .search__tab .date__box .date__box--inner .text__date {
@@ -110,16 +106,12 @@
   height: 40px;
 }
 .search__tab--box .search__tab .customer__box {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .search__tab--box .search__tab .customer__box .customer__box--inner {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .search__tab--box .search__tab .customer__box .customer__box--inner .text__cus {
@@ -148,8 +140,6 @@
   padding-left: 50px;
 }
 .search__tab--box .search__tab .button__box .btn__box--inner {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   height: 100%;
 }
@@ -166,8 +156,6 @@
   justify-content: center;
 }
 .menu-location .list__items--menu {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .menu-location .list__items--menu .list__items {
@@ -233,8 +221,6 @@
 }
 .dropdown-border-radius .dropdown .dropdown-menu {
   width: 470px;
-  height: -webkit-max-content;
-  height: -moz-max-content;
   height: max-content;
   transform: translate3d(-0.888889px, 45px, 0px) !important;
 }
@@ -439,9 +425,10 @@ body {
 }
 .navbar .shoping-box .shoping-cart::before {
   content: "";
-  background-image: url("https://www.luxstay.com/icons/vi.svg");
+  background-image: url("https://illustoon.com/photo/912.png");
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 50%;
   display: block;
   width: 25px;
   height: 25px;
@@ -470,8 +457,6 @@ body {
 }
 .navbar .shoping-box .menu-cart .menu__content--cart {
   width: 450px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   position: relative;
 }
@@ -521,6 +506,7 @@ body {
 }
 .navbar .shoping-box .menu-cart .menu__content--cart .menu__content__item .menu__items .icon--size {
   width: 24px;
+  height: 24px;
 }
 .navbar .shoping-box .menu-cart .menu__content--cart .menu__content__item .menu__items .content__item, .navbar .shoping-box .menu-cart .menu__content--cart .menu__content__item .menu__items .tittle__item {
   text-decoration: none;
@@ -541,23 +527,12 @@ body {
   top: 53px;
   right: -20px;
   z-index: 999;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  -webkit-animation: cartOpen linear 0.5s;
-          animation: cartOpen linear 0.5s;
+  animation: cartOpen linear 0.5s;
 }
 @media (max-width: 991px) {
   .navbar .shoping-box .is-active {
     left: 10px;
-  }
-}
-@-webkit-keyframes cartOpen {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 @keyframes cartOpen {
@@ -1266,8 +1241,7 @@ body {
   position: absolute;
   top: 80px;
   left: 694px;
-  -webkit-animation: numberOpen linear 0.5s;
-          animation: numberOpen linear 0.5s;
+  animation: numberOpen linear 0.5s;
 }
 @media (max-width: 1200px) {
   .header-search-logo .search__guest--box-open {
@@ -1283,14 +1257,6 @@ body {
 @media (max-width: 575px) {
   .header-search-logo .search__guest--box-open {
     left: 150px;
-  }
-}
-@-webkit-keyframes numberOpen {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 @keyframes numberOpen {
@@ -1438,8 +1404,6 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .image__item .product__content .product__info {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .image__item .product__content .product__info b {
@@ -1566,8 +1530,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   height: 100%;
 }
@@ -1717,8 +1679,6 @@ body {
   justify-content: flex-end;
 }
 .widget .widget__menu .widget__menu-item {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .widget .widget__menu .widget__menu-item .wg-m-sz {
@@ -1737,4 +1697,6 @@ body {
   font-size: 13px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #AAAAAA;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
