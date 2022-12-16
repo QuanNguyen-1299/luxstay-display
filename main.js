@@ -13,9 +13,6 @@ $(document).ready(function () {
 
 });
 
-
-
-
 const slickSlide = (property, responsive) => {
   $(property.className).slick({
     infinite: property.infinite,
