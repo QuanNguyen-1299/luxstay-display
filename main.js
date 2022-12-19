@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
   //slide-carousel
   slickSlide(myProperty, breakPoint);
